@@ -4,32 +4,64 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Player Setting")]
     public Rigidbody2D rb;
-    [SerializeField] private float moveSpeed = 5f;
+    public Animator anim;
+    [SerializeField] private float moveSpeed = 3f;
 
-    private Vector3 movement;
+    private bool isFaceRight = true;
+    private float inputX, inputY;
+    private float idleX, idleY;
+    private Vector2 movement;
 
     private void Update()
     {
         PlayerInput();
+        PlayerAnimation();
     }
 
     private void FixedUpdate()
     {
-        PlayerMove();
+        PlayerMovement();
+    }
+
+    private void PlayerMovement()
+    {
+        rb.velocity = movement * moveSpeed;
+        PlayerFlipX();
+    }
+
+    private void PlayerAnimation()
+    {
+        anim.SetFloat("idleX", idleX);
+        anim.SetFloat("idleY", idleY);
+        anim.SetFloat("moveX", movement.x);
+        anim.SetFloat("moveY", movement.y);
+        anim.SetBool("isMove", movement != Vector2.zero);
     }
 
     private void PlayerInput()
     {
-        movement.x = Input.GetAxis("Horizontal");
-        movement.y = Input.GetAxis("Vertical");
-        movement.Normalize();
+        inputX = Input.GetAxisRaw("Horizontal");
+        inputY = Input.GetAxisRaw("Vertical");
+        movement = new Vector2(inputX, inputY).normalized;
+        if (movement != Vector2.zero)
+        {
+            idleX = inputX;
+            idleY = inputY;
+        }
     }
 
-    private void PlayerMove()
+    private void PlayerFlipX()
     {
-        rb.velocity = movement * moveSpeed;
+        if (movement.x > 0)
+        {
+            isFaceRight = true;
+        } else if(movement.x < 0)
+        {
+            isFaceRight = false;
+        }
+        transform.localScale = new Vector3(isFaceRight ? 1 : -1, 1, 1);
     }
-
 
 }
