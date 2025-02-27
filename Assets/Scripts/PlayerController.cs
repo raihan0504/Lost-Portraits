@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         PlayerInput();
+        PlayerFlipX();
         PlayerAnimation();
     }
 
@@ -28,7 +29,6 @@ public class PlayerController : MonoBehaviour
     private void PlayerMovement()
     {
         rb.velocity = movement * moveSpeed;
-        PlayerFlipX();
     }
 
     private void PlayerAnimation()
@@ -42,6 +42,16 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerInput()
     {
+        bool mousInput = Input.GetMouseButtonDown(0);
+        if (mousInput)
+        {
+            PlayerAttack(); 
+            anim.SetBool("isAttack", true);
+        } else
+        {
+            anim.SetBool("isAttack", false);
+        }
+
         inputX = Input.GetAxisRaw("Horizontal");
         inputY = Input.GetAxisRaw("Vertical");
         movement = new Vector2(inputX, inputY).normalized;
@@ -50,6 +60,12 @@ public class PlayerController : MonoBehaviour
             idleX = inputX;
             idleY = inputY;
         }
+
+    }
+
+    private void PlayerAttack()
+    {   
+      
     }
 
     private void PlayerFlipX()
