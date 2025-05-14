@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainGame.unity
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2a32deec6c0f2c94bbb3a9c53881965a
+  - enabled: 1
+    path: Assets/Scenes/intro.unity
+    guid: 72d80299b08bcd542848c5b76128b992
+  - enabled: 1
+    path: Assets/Scenes/Rumah.unity
+    guid: cc817991ebc303f4fbeba988d7b8818c
+  - enabled: 1
+    path: Assets/Scenes/hantu.unity
+    guid: fed51d34558b16a42ae80c12d433c02f
+  - enabled: 1
+    path: Assets/Scenes/scene1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/RuangArsip.unity
+    guid: 7d74a70fe692ab840905522d2331b1c3
   m_configObjects: {}

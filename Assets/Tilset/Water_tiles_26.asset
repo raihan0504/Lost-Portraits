@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Water_tiles_26
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -1053452912, guid: 2092270a13a62bf43afee355c1b97954, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_Transform:
     e00: 1
     e01: 0
