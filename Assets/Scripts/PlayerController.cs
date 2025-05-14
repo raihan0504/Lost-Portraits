@@ -14,9 +14,11 @@ public class PlayerController : MonoBehaviour
     private InputAction fire;
     private Vector2 moveDir;
     private Vector2 lastMove;
+    private bool isAttacking;
 
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] GameObject attackZone;
 
     private void Awake()
     {
@@ -49,7 +51,21 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Attack Started");
             anim.SetTrigger("isAttack");
+
+            // Aktifkan area serangan sementara
+            StartCoroutine(DoAttack());
         }
+    }
+
+    private IEnumerator DoAttack()
+    {
+        isAttacking = true;
+        attackZone.SetActive(true);
+
+        yield return new WaitForSeconds(0.2f);
+
+        attackZone.SetActive(false);
+        isAttacking = false;
     }
 
     private void AnimationHandle()

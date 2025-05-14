@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class KnockBack : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float knockbackForce = 7f;
+    private Rigidbody2D rb;
+
+    private void Awake()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void KnockbackFrom(Vector2 sourcePosition)
     {
-        
+        Vector2 direction = ((Vector2) transform.position - sourcePosition).normalized;
+        rb.AddForce(direction * knockbackForce);
     }
 }

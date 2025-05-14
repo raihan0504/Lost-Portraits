@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float moveSpeed;
-    [SerializeField] float detectionRadius;
-    [SerializeField] LayerMask playerLayer;
-    [SerializeField] Transform player;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float detectionRadius;
+    [SerializeField] private LayerMask playerLayer;
+    [SerializeField] private Transform player;
 
     private bool canSeePlayer = false;
 
