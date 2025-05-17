@@ -12,29 +12,34 @@ public class Health : MonoBehaviour
     [Header("Component")]
     private Knockback knockback;
     private Animator anim;
+    private DamageFlash damageFlash;
+    private Enemy enemy;
 
     private void Start()
     {
         currentHealth = maxHealth;
         knockback = GetComponent<Knockback>();
         anim = GetComponent<Animator>();
+        damageFlash = GetComponent<DamageFlash>();
+        enemy = GetComponent<Enemy>();
     }
 
     public void TakeDamage(int damage, Vector2 knockbackDir)
     {
         currentHealth -= damage;
 
-        // Pilih SALAH SATU metode knockback, jangan keduanya
-        Enemy enemy = GetComponent<Enemy>();
         if (enemy != null)
         {
-            // Gunakan stagger untuk enemy
+            // Hanya enemy yang mendapat efek flash
+            if (damageFlash != null)
+            {
+                damageFlash.Flash();
+            }
+
             enemy.Stagger(knockbackDir);
-            Debug.Log("Enemy knockback with force 20f");
         }
         else if (knockback != null)
         {
-            // Gunakan knockback component untuk non-enemy
             knockback.ApplyKnockback(knockbackDir);
         }
 
@@ -46,9 +51,11 @@ public class Health : MonoBehaviour
 
     void Die()
     {
-        anim.SetTrigger("die");
-        Debug.Log(gameObject.name + " mati");
-        // Nonaktifkan kontrol agar player tidak bisa gerak
+        if (anim != null)
+        {
+            anim.SetTrigger("die");
+        }
+
         PlayerController controller = GetComponent<PlayerController>();
         if (controller != null)
         {
@@ -56,7 +63,6 @@ public class Health : MonoBehaviour
         }
 
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        // Hancurkan objek setelah animasi selesai (misal 1 detik)
         StartCoroutine(DelayedDestroy(1f));
     }
 
