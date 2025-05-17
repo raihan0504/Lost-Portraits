@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     public float attackRange = 1f;
     public float chaseSpeed = 3.5f;
     public int damage = 20;
-    public float attackCooldown = 1.5f;
+    public float attackCooldown = 0.5f;
 
     [Header("Knockback Settings")]
     public float knockbackForce = 30f; // Tingkatkan knockback force
