@@ -171,7 +171,7 @@ MonoBehaviour:
   attackRange: 1
   chaseSpeed: 3.5
   damage: 20
-  attackCooldown: 1.5
+  attackCooldown: 0.5
   knockbackForce: 10
   staggerDuration: 0.2
 --- !u!114 &2996504626531916520

@@ -63,7 +63,7 @@ public class Health : MonoBehaviour
         }
 
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        StartCoroutine(DelayedDestroy(1f));
+        StartCoroutine(DelayedDestroy(0.5f));
     }
 
     IEnumerator DelayedDestroy(float delay)
