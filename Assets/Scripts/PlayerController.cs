@@ -2,29 +2,41 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Components")]
     private Rigidbody2D rb;
     private Animator anim;
     private PlayerInputAction action;
+    private SpriteRenderer spriteRenderer;
+
+    [Header("InputAction")]
     private InputAction move;
     private InputAction fire;
-    private Vector2 moveDir;
-    private Vector2 lastMove;
-    private bool isAttacking;
 
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] GameObject attackZone;
+    private bool isAttacking;
+    private Vector2 lastMove;
+    private Vector2 moveDir;
+
+    private void Start()
+    {
+        if (attackZone != null)
+            attackZone.SetActive(false);
+    }
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         action = new PlayerInputAction();
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void OnEnable()
@@ -88,15 +100,29 @@ public class PlayerController : MonoBehaviour
 
     private void FlipSprite()
     {
-
         if (lastMove.x > 0)
         {
-            transform.localScale = Vector3.one;
-        }
-        else if (lastMove.x < 0)
+            spriteRenderer.flipX = false;
+        } else if(lastMove.x < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            spriteRenderer.flipX = true;
         }
+    }
+
+    void UpdateAttackZoneDir()
+    {
+        if (lastMove == Vector2.zero) return;
+
+        // Normalisasi ke arah delapan arah (tanpa diagonal jika mau)
+        Vector2 direction = lastMove;
+
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+            direction = new Vector2(Mathf.Sign(direction.x), 0); // Horizontal
+        else
+            direction = new Vector2(0, Mathf.Sign(direction.y)); // Vertikal
+
+        // Geser AttackZone ke arah yang sesuai
+        attackZone.transform.localPosition = direction;
     }
 
     private void Update()
@@ -106,6 +132,8 @@ public class PlayerController : MonoBehaviour
         AnimationHandle();
         // Flip Player
         FlipSprite();
+
+        UpdateAttackZoneDir();
     }
 
     private void FixedUpdate()
