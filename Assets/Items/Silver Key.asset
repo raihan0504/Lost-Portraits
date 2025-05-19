@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 944522faca5ceaf40ae291fdf494bba7, type: 3}
-  m_Name: Key
+  m_Name: Silver Key
   m_EditorClassIdentifier: 
-  type: 1
-  actionType: 1
-  range: {x: 5, y: 4}
-  stackable: 1
-  image: {fileID: -1168158505, guid: 5a9e7465883157a428ead1f3543d7afb, type: 3}
+  itemType: 2
+  actionType: 2
+  stackable: 0
+  image: {fileID: 1289968962, guid: 5a9e7465883157a428ead1f3543d7afb, type: 3}
