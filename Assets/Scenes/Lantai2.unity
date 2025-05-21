@@ -428,6 +428,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+<<<<<<< HEAD
 --- !u!1001 &568746172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -525,6 +526,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a75538039289c04e97ca9fc625b9053, type: 3}
+=======
+>>>>>>> parent of 9d5601b (push)
 --- !u!1 &640925053
 GameObject:
   m_ObjectHideFlags: 3
@@ -11728,4 +11731,7 @@ SceneRoots:
   - {fileID: 1086631780}
   - {fileID: 1849433283}
   - {fileID: 493790006}
+<<<<<<< HEAD
   - {fileID: 568746172}
+=======
+>>>>>>> parent of 9d5601b (push)

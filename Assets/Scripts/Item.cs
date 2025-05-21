@@ -9,9 +9,6 @@ public class Item : ScriptableObject
     public ActionType actionType;
     public bool stackable = true;
     public Sprite image;
-
-    [Header("Optional Value")]
-    public int healAmount;
 }
 
 public enum ItemType

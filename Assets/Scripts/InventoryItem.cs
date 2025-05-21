@@ -10,7 +10,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     [Header("UI")]
     public Image image;
     public Text countText;
-     
+
     [HideInInspector] public Item item;
     [HideInInspector] public int count = 1;
     [HideInInspector] public Transform parentAfterDrag;
@@ -24,15 +24,10 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void RefreshCount()
     {
-        Debug.Log("RefreshCount() called."); // Log bahwa metode dipanggil
         countText.text = count.ToString();
-        Debug.Log("Count set to: " + count); // Log nilai count yang digunakan
-
         bool textActive = count > 1;
         countText.gameObject.SetActive(textActive);
-        Debug.Log("countText GameObject active: " + textActive); // Log status aktif/tidaknya
     }
-
 
     // Drag and Drop
     public void OnBeginDrag(PointerEventData eventData)

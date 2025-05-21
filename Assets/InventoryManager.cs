@@ -8,41 +8,6 @@ public class InventoryManager : MonoBehaviour
     public InventorySlot[] InventorySlots;
     public GameObject inventoryItemPrefab;
 
-    int selectedSlot = -1;
-
-    private void Start()
-    {
-        ChangeSelectSlot(16);
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1)){
-            ChangeSelectSlot(16);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2)){
-            ChangeSelectSlot(17);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3)){
-            ChangeSelectSlot(18);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha4)) {
-            ChangeSelectSlot(19);
-        }
-    }
-
-    void ChangeSelectSlot(int newValue)
-    {
-        if(selectedSlot >= 0)
-        {
-            InventorySlots[selectedSlot].Deselect();
-
-        }
-
-        InventorySlots[newValue].Select();
-        selectedSlot = newValue;
-    }
-
     public bool AddItem(Item item)
     {
         // Check jika ada slot yang sama item dengan count lebih rendah dari maksimum
@@ -79,29 +44,5 @@ public class InventoryManager : MonoBehaviour
         GameObject newItemGo = Instantiate(inventoryItemPrefab, slot.transform);
         InventoryItem inventoryItem = newItemGo.GetComponent<InventoryItem>();
         inventoryItem.InitialiseItem(item);
-    }
-
-    public Item GetSelectedItem(bool use)
-    {
-        InventorySlot slot = InventorySlots[selectedSlot];
-        InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
-        if(itemInSlot != null)
-        {
-            Item item = itemInSlot.item;
-            if (use == true)
-            {
-                itemInSlot.count--;
-                if(itemInSlot.count <= 0)
-                {
-                    Destroy(itemInSlot.gameObject);
-                } else
-                {
-                    itemInSlot.RefreshCount();
-                }
-            }
-
-            return item;
-        }
-        return null;
     }
 }
