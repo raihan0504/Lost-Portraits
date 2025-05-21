@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private PlayerInputAction action;
     private SpriteRenderer spriteRenderer;
+    private Health health;
 
     [Header("InputAction")]
     private InputAction move;
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
         action = new PlayerInputAction();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        health = GetComponent<Health>();
     }
 
     private void OnEnable()
@@ -61,13 +63,23 @@ public class PlayerController : MonoBehaviour
     {
         if (context.performed)
         {
-            Debug.Log("Attack Started");
-            anim.SetTrigger("isAttack");
+            // Ambil item dari slot aktif (tanpa mengkonsumsi item)
+            Item item = InventoryManager.Instance.GetSelectedItem(false);
 
-            // Aktifkan area serangan sementara
-            StartCoroutine(DoAttack());
+            // Cek apakah item ada dan jenisnya adalah Weapon
+            if (item != null && item.itemType == ItemType.Weapon)
+            {
+                Debug.Log("Attacking with weapon: " + item.name);
+                anim.SetTrigger("isAttack");
+                StartCoroutine(DoAttack());
+            }
+            else
+            {
+                Debug.Log("No weapon equipped. Cannot attack.");
+            }
         }
     }
+
 
     private IEnumerator DoAttack()
     {
@@ -127,36 +139,54 @@ public class PlayerController : MonoBehaviour
 
     private void UseItem()
     {
-        Item item = FindObjectOfType<InventoryManager>().GetSelectedItem(true);
-        if (item != null)
+        Item item = InventoryManager.Instance.GetSelectedItem(true); // true = pakai item
+
+        if (item == null)
         {
-            Debug.Log($"Using item: {item.name}, ActionType: {item.actionType}");
+            Debug.Log("No item selected or selected slot is empty.");
+            return;
+        }
 
-            switch (item.actionType)
-            {
-                case ActionType.Heal:
-                    GetComponent<Health>()?.Heal(item.healAmount); // kamu bisa sesuaikan angka 20 ini atau bikin variabel di SO
-                    break;
+        // Hanya gunakan item jika bukan Weapon
+        if (item.itemType == ItemType.Weapon)
+        {
+            Debug.Log("Weapon is equipped, not used via F key.");
+            return;
+        }
 
-                case ActionType.Attack:
-                    // Bisa kasih efek khusus nanti
-                    Debug.Log("Attack item used");
-                    break;
+        Debug.Log($"Using item: {item.name}, Type: {item.itemType}, Action: {item.actionType}");
 
-                case ActionType.Unlock:
-                    Debug.Log("Key used");
-                    break;
-            }
+        switch (item.actionType)
+        {
+            case ActionType.Heal:
+                Health health = GetComponent<Health>();
+                if (health != null)
+                {
+                    health.Heal(item.healAmount);
+                }
+                break;
+
+            case ActionType.Unlock:
+                Debug.Log("Trying to unlock something with key item.");
+                // Tambahkan logika membuka pintu/peti
+                break;
+
+            default:
+                Debug.LogWarning("This item action is not supported via F key.");
+                break;
         }
     }
 
+
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        Item item = InventoryManager.Instance.GetSelectedItem(false);
+
+        if (Input.GetKeyDown(KeyCode.C))
         {
             UseItem();
         }
-
         moveDir = move.ReadValue<Vector2>();
         // Animation
         AnimationHandle();

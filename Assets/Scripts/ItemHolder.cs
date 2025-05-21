@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ItemEffectHandler
+public class ItemHolder : MonoBehaviour
 {
-    void UseItem(Item item);
+    public Item item;
 }

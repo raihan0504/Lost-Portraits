@@ -27,8 +27,8 @@ public class Health : MonoBehaviour
     public void Heal(int amount)
     {
         currentHealth += amount;
-        currentHealth = Mathf.Min(currentHealth, maxHealth);
-        Debug.Log($"Healed by {amount}, current HP: {currentHealth}");
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        Debug.Log("Healed! Current health: " + currentHealth);
     }
 
     public void TakeDamage(int damage, Vector2 knockbackDir)

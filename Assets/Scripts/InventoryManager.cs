@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
+    public static InventoryManager Instance;
+    public Item[] startItems;
     public int maxStackedItem = 4;
     public InventorySlot[] InventorySlots;
     public GameObject inventoryItemPrefab;
@@ -12,22 +14,31 @@ public class InventoryManager : MonoBehaviour
 
     private void Start()
     {
-        ChangeSelectSlot(16);
+        ChangeSelectSlot(0);
+        foreach (var item in startItems)
+        {
+            AddItem(item);
+        }
+    }
+
+    private void Awake()
+    {
+        Instance = this;
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1)){
-            ChangeSelectSlot(16);
+            ChangeSelectSlot(0);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2)){
-            ChangeSelectSlot(17);
+            ChangeSelectSlot(1);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3)){
-            ChangeSelectSlot(18);
+            ChangeSelectSlot(2);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4)) {
-            ChangeSelectSlot(19);
+            ChangeSelectSlot(3);
         }
     }
 
@@ -85,22 +96,24 @@ public class InventoryManager : MonoBehaviour
     {
         InventorySlot slot = InventorySlots[selectedSlot];
         InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
-        if(itemInSlot != null)
+        if (itemInSlot != null)
         {
-            Item item = itemInSlot.item;
+            Item item = itemInSlot.item;  // Simpan referensi item
+
             if (use == true)
             {
                 itemInSlot.count--;
-                if(itemInSlot.count <= 0)
+                if (itemInSlot.count <= 0)
                 {
                     Destroy(itemInSlot.gameObject);
-                } else
+                }
+                else
                 {
                     itemInSlot.RefreshCount();
                 }
             }
 
-            return item;
+            return item;  // Return referensi item yang sudah disimpan
         }
         return null;
     }
