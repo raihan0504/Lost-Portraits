@@ -12051,6 +12051,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 2074693372}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Naufal_branch
 --- !u!1001 &1221273745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12148,6 +12151,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a75538039289c04e97ca9fc625b9053, type: 3}
+<<<<<<< HEAD
 =======
 --- !u!114 &1192392970 stripped
 MonoBehaviour:
@@ -12161,6 +12165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 >>>>>>> parent of 9d5601b (push)
+=======
+>>>>>>> Naufal_branch
 --- !u!1 &1259785938
 GameObject:
   m_ObjectHideFlags: 0
