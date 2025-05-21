@@ -24,6 +24,15 @@ public class Health : MonoBehaviour
         enemy = GetComponent<Enemy>();
     }
 
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        if (currentHealth > maxHealth)
+            currentHealth = maxHealth;
+
+        Debug.Log("Healed: " + amount + " | Health sekarang: " + currentHealth);
+    }
+
     public void TakeDamage(int damage, Vector2 knockbackDir)
     {
         currentHealth -= damage;

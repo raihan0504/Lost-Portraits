@@ -125,30 +125,30 @@ public class PlayerController : MonoBehaviour
         attackZone.transform.localPosition = direction;
     }
 
-    //private void UseItem()
-    //{
-    //    Item item = FindObjectOfType<InventoryManager>().GetSelectedItem(true);
-    //    if (item != null)
-    //    {
-    //        Debug.Log($"Using item: {item.name}, ActionType: {item.actionType}");
+    private void UseItem()
+    {
+        Item item = FindObjectOfType<InventoryManager>().GetSelectedItem(true);
+        if (item != null)
+        {
+            Debug.Log($"Using item: {item.name}, ActionType: {item.actionType}");
 
-    //        switch (item.actionType)
-    //        {
-    //            case ActionType.Heal:
-    //                GetComponent<Health>()?.Heal(item.healAmount); // kamu bisa sesuaikan angka 20 ini atau bikin variabel di SO
-    //                break;
+            switch (item.actionType)
+            {
+                case ActionType.Heal:
+                    GetComponent<Health>()?.Heal(item.healAmount); // kamu bisa sesuaikan angka 20 ini atau bikin variabel di SO
+                    break;
 
-    //            case ActionType.Attack:
-    //                // Bisa kasih efek khusus nanti
-    //                Debug.Log("Attack item used");
-    //                break;
+                case ActionType.Attack:
+                    // Bisa kasih efek khusus nanti
+                    Debug.Log("Attack item used");
+                    break;
 
-    //            case ActionType.Unlock:
-    //                Debug.Log("Key used");
-    //                break;
-    //        }
-    //    }
-    //}
+                case ActionType.Unlock:
+                    Debug.Log("Key used");
+                    break;
+            }
+        }
+    }
 
     private void Update()
     {
