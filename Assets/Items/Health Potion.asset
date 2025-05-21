@@ -16,3 +16,4 @@ MonoBehaviour:
   actionType: 1
   stackable: 1
   image: {fileID: -344042923, guid: 87ae001ab680171488adcd3ca56b25be, type: 3}
+  healAmount: 20
