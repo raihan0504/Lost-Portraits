@@ -174,9 +174,9 @@ public class Enemy : MonoBehaviour
     private void FlipSprite(float dirX)
     {
         if (dirX > 0.1f)
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-5, 5, 1);
         else if (dirX < -0.1f)
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(5, 5, 1);
     }
 
     private void OnDrawGizmosSelected()
