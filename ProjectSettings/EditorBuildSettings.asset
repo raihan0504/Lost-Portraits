@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/lantai2_pintu6.unity
     guid: 9ef275b51f68c294cb134f3a02e15ad0
+  - enabled: 1
+    path: Assets/Scenes/Basement.unity
+    guid: 4afd8d4a1f6a4a049b22098222552209
   m_configObjects: {}

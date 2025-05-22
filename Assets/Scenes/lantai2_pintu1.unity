@@ -1560,7 +1560,10 @@ PrefabInstance:
     - {fileID: 150737673494707558, guid: ee46d2c7d8fdf324695a13d246f03072, type: 3}
     - {fileID: 8572422611870329867, guid: ee46d2c7d8fdf324695a13d246f03072, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2718929386064555300, guid: ee46d2c7d8fdf324695a13d246f03072, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1424017878}
   m_SourcePrefab: {fileID: 100100000, guid: ee46d2c7d8fdf324695a13d246f03072, type: 3}
 --- !u!114 &475199497 stripped
 MonoBehaviour:
@@ -2807,6 +2810,24 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1 &1424017876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2718929386064555300, guid: ee46d2c7d8fdf324695a13d246f03072, type: 3}
+  m_PrefabInstance: {fileID: 461515521}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1424017878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424017876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95171ed71b79bc24cae82c9a95dde13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScene: Lantai2
 --- !u!1 &1474014635 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2488002951849450422, guid: d77cc18205be17c4ba181454decae39b, type: 3}

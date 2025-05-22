@@ -266,8 +266,29 @@ PrefabInstance:
     - {fileID: 150737673494707558, guid: ee46d2c7d8fdf324695a13d246f03072, type: 3}
     - {fileID: 8572422611870329867, guid: ee46d2c7d8fdf324695a13d246f03072, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2718929386064555300, guid: ee46d2c7d8fdf324695a13d246f03072, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 37457126}
   m_SourcePrefab: {fileID: 100100000, guid: ee46d2c7d8fdf324695a13d246f03072, type: 3}
+--- !u!1 &37457125 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2718929386064555300, guid: ee46d2c7d8fdf324695a13d246f03072, type: 3}
+  m_PrefabInstance: {fileID: 37457124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &37457126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37457125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95171ed71b79bc24cae82c9a95dde13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScene: Lantai2
 --- !u!1 &37931380
 GameObject:
   m_ObjectHideFlags: 0
