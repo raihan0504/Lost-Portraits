@@ -9614,6 +9614,68 @@ Transform:
   - {fileID: 1594387836}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &860332263
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.32408
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.4874196
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152021861076813030, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_Name
+      value: Note Object (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655984777644429394, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: noteContent
+      value: Langit-langitnya retak membentuk pola aneh, seperti peta yang menunggu
+        dibaca.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9744d366a8545a1479e040dea0377197, type: 3}
 --- !u!114 &863245209 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 640025468399544988, guid: d77cc18205be17c4ba181454decae39b, type: 3}
@@ -10562,7 +10624,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8655984777644429394, guid: 9744d366a8545a1479e040dea0377197, type: 3}
       propertyPath: noteContent
-      value: tolol
+      value: 'Barang-barang lama disimpan di tempat yang paling jarang dilihat.
+
+        Jika
+        ingin tahu masa lalu, carilah tempat di gudang yang selalu tertutup.
+
+
+        (PENTING)'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11014,6 +11082,70 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &1355181665
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.136711
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.159254
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152021861076813030, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_Name
+      value: Note Object (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655984777644429394, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: noteContent
+      value: 'Pintu disebelah kiri adalah gudang dan yang sebelah kanan adalah basemen
+
+
+        (PENTING)'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9744d366a8545a1479e040dea0377197, type: 3}
 --- !u!114 &1363957154 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1252036171709253081, guid: d77cc18205be17c4ba181454decae39b, type: 3}
@@ -11390,6 +11522,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29fcd7fa0b94ba14e8eca94df8c17d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1577631199
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.922655
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.293939
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152021861076813030, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_Name
+      value: Note Object (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655984777644429394, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: noteContent
+      value: Ada aroma lembap bercampur sesuatu yang lebih tua dari jamur bau kenangan
+        yang membusuk.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9744d366a8545a1479e040dea0377197, type: 3}
 --- !u!1 &1578795399
 GameObject:
   m_ObjectHideFlags: 0
@@ -11962,6 +12156,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7452904961099584330, guid: a648b2a5429807c4cb8ee800886b9bef, type: 3}
   m_PrefabInstance: {fileID: 2016355317}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1617036165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152021861076813030, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_Name
+      value: Note Object (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655984777644429394, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: noteContent
+      value: Rumah ini tidak hanya menyimpan sejarah, tapi juga perasaan... dendam
+        yang belum selesai.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9744d366a8545a1479e040dea0377197, type: 3}
 --- !u!1001 &1633843361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12044,7 +12300,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8655984777644429394, guid: 9744d366a8545a1479e040dea0377197, type: 3}
       propertyPath: noteContent
-      value: hahah kamu kena prank
+      value: 'Pegangan pintu itu rusak sejak lama. Tapi engselnya masih bisa berbicara
+        kalau kamu mendorong dengan benar
+
+
+        (PENTING)'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12267,6 +12527,68 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1784196928
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1997838
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.623802
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152021861076813030, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_Name
+      value: Note Object (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655984777644429394, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: noteContent
+      value: Udara di sini dingin, meski jendela-jendela tertutup rapat dan matahari
+        masih bersinar di luar.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9744d366a8545a1479e040dea0377197, type: 3}
 --- !u!114 &1786090172 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 15239254135695096, guid: d77cc18205be17c4ba181454decae39b, type: 3}
@@ -13053,6 +13375,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 646801300446689618, guid: 95d09911ca126224785a253ced80af84, type: 3}
   m_PrefabInstance: {fileID: 4708159414239548498}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1904553472
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.456487
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.5600605
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152021861076813030, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_Name
+      value: Note Object (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655984777644429394, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: noteContent
+      value: Foto-foto tua di rak buku terbalik, wajah-wajahnya tercakar dan tak
+        dikenal.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9744d366a8545a1479e040dea0377197, type: 3}
 --- !u!114 &1917347690 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6532239969273055710, guid: d77cc18205be17c4ba181454decae39b, type: 3}
@@ -23521,7 +23905,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8655984777644429394, guid: 9744d366a8545a1479e040dea0377197, type: 3}
       propertyPath: noteContent
-      value: Untuk kunci ke basemen ada pada lantai 2
+      value: 'Untuk kunci ke basemen ada pada lantai 2
+
+
+        (PENTING)'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24522,3 +24909,9 @@ SceneRoots:
   - {fileID: 1633843361}
   - {fileID: 1018978615}
   - {fileID: 874318917540838428}
+  - {fileID: 1355181665}
+  - {fileID: 1577631199}
+  - {fileID: 1904553472}
+  - {fileID: 1617036165}
+  - {fileID: 860332263}
+  - {fileID: 1784196928}
