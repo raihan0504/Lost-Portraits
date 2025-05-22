@@ -1414,6 +1414,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1307639612
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.674618
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9074187
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152021861076813030, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_Name
+      value: Note Object (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655984777644429394, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: noteContent
+      value: Ia mati tanpa nisan, namun hidup dalam pikiran mereka yang bertanya.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9744d366a8545a1479e040dea0377197, type: 3}
 --- !u!1 &1406768738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2042,6 +2103,71 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1536538961
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.10049033
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0252225
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152021861076813030, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_Name
+      value: Note Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 7347381490403643429, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655984777644429394, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: noteContent
+      value: Sejarah menyingkirkannya, tapi ia tetap berdiri di antara kata dan keberanian.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9744d366a8545a1479e040dea0377197, type: 3}
 --- !u!1 &1725588829
 GameObject:
   m_ObjectHideFlags: 0
@@ -5680,6 +5806,67 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1001 &2047403538
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.963951
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.127391
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859248852517175168, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152021861076813030, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: m_Name
+      value: Note Object (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655984777644429394, guid: 9744d366a8545a1479e040dea0377197, type: 3}
+      propertyPath: noteContent
+      value: Bagi dia, kemerdekaan bukan akhir, tapi awal dari tugas paling berat.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9744d366a8545a1479e040dea0377197, type: 3}
 --- !u!1 &2107665847
 GameObject:
   m_ObjectHideFlags: 0
@@ -5911,3 +6098,6 @@ SceneRoots:
   - {fileID: 1206487313}
   - {fileID: 536164751}
   - {fileID: 979837904}
+  - {fileID: 1536538961}
+  - {fileID: 1307639612}
+  - {fileID: 2047403538}
