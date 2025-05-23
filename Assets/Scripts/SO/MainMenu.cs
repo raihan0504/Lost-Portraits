@@ -3,17 +3,21 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    // Panggil ini dari tombol Play
+    public GameObject popupPanel; // Drag panel ini dari inspector
+
     public void PlayGame()
     {
-        // Ganti 1 dengan index atau nama scene awal game
-        SceneManager.LoadScene(1);
+        popupPanel.SetActive(true); // Tampilkan pop-up
     }
 
-    // Panggil ini dari tombol Exit
+    public void ConfirmStartGame()
+    {
+        SceneManager.LoadScene(1); // Ganti 1 dengan nama/index scene kamu
+    }
+
     public void ExitGame()
     {
         Debug.Log("Game is exiting...");
-        Application.Quit(); // Akan bekerja saat build game (tidak di editor)
+        Application.Quit();
     }
 }
