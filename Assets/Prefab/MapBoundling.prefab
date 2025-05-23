@@ -382,7 +382,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1171607912872218593}
-  - component: {fileID: 3518179045492282898}
   - component: {fileID: 2671472510433382236}
   m_Layer: 0
   m_Name: Lantai2
@@ -406,19 +405,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8878571135077699304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3518179045492282898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3809570584914313969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95171ed71b79bc24cae82c9a95dde13a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetScene: Lantai2
 --- !u!61 &2671472510433382236
 BoxCollider2D:
   m_ObjectHideFlags: 0

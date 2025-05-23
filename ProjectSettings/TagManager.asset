@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - PlayerAttack
+  - Confiner
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - Character
   - Water
   - UI
-  - 
+  - Confiner
   - 
   - 
   - 
